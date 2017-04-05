@@ -35,16 +35,23 @@ Library
                  containers >= 0.3 && < 0.6,
                  binary >= 0.7 && < 0.9
   exposed-modules:
-    Unbound.LocallyNameless,
-    Unbound.LocallyNameless.Name,
-    Unbound.LocallyNameless.Fresh,
-    Unbound.LocallyNameless.Types,
-    Unbound.LocallyNameless.Alpha,
-    Unbound.LocallyNameless.Subst,
-    Unbound.LocallyNameless.Ops,
+    -- Unbound.LocallyNameless,
+    -- Unbound.LocallyNameless.Name,
+    -- Unbound.LocallyNameless.Fresh,
+    -- Unbound.LocallyNameless.Types,
+    -- Unbound.LocallyNameless.Alpha,
+    -- Unbound.LocallyNameless.Subst,
+    -- Unbound.LocallyNameless.Ops,
     Unbound.PermM,
     Unbound.Util,
-    Unbound.DynR
+    Unbound.DynR,
+    Unbound.Nominal2.Name,
+    Unbound.Nominal2.Fresh,
+    Unbound.Nominal2.Types,
+    Unbound.Nominal2.Alpha,
+    Unbound.Nominal2.Subst,
+    Unbound.Nominal2.Ops
+
   other-extensions: CPP
                     EmptyDataDecls
                     ExistentialQuantification
