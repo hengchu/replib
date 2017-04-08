@@ -10,6 +10,7 @@ module Unbound.Nominal2.Types (
   Bind(..)
   , Rec(..)
   , Embed(..)
+  , Rebind(..)
 ) where
 
 import Generics.RepLib
@@ -24,4 +25,6 @@ data Rec p = Rec p
 newtype Embed t = Embed t
   deriving (Show)
 
-$(derive [''Bind, ''Embed, ''Rec])
+data Rebind p1 p2 = Rebind p1 p2
+
+$(derive [''Bind, ''Embed, ''Rec, ''Rebind])
