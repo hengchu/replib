@@ -495,6 +495,7 @@ bindersIdx = binders idx
 yx = App (Var nameY) (Var nameX)
 xEqY = (nameX, Embed $ Var nameY)
 yEqX = (nameY, Embed $ Var nameX)
+zEqW = (nameZ, Embed $ Var (s2n "w"))
 letBinders = [xEqY, yEqX]
 letXY = Let (bind (Rec letBinders) yx)
 bindersLet = binders' Pat letBinders
@@ -502,6 +503,8 @@ bindersLetXY = binders' Term letXY
 fvLetXY = fv letXY
 
 letYX = Let (bind (Rec $ reverse letBinders) xy)
+letXYZ = Let (bind (Rec (letBinders ++ [zEqW])) xy)
+absXY = Abs (bind nameX (App (Var nameX) (Var nameY)))
 
 -------------------------------------------------
 -- More testing code
