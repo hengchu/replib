@@ -35,22 +35,22 @@ Library
                  containers >= 0.3 && < 0.6,
                  binary >= 0.7 && < 0.9
   exposed-modules:
-    -- Unbound.LocallyNameless,
-    -- Unbound.LocallyNameless.Name,
-    -- Unbound.LocallyNameless.Fresh,
-    -- Unbound.LocallyNameless.Types,
-    -- Unbound.LocallyNameless.Alpha,
-    -- Unbound.LocallyNameless.Subst,
-    -- Unbound.LocallyNameless.Ops,
+    Unbound.LocallyNameless,
+    Unbound.LocallyNameless.Name,
+    Unbound.LocallyNameless.Fresh,
+    Unbound.LocallyNameless.Types,
+    Unbound.LocallyNameless.Alpha,
+    Unbound.LocallyNameless.Subst,
+    Unbound.LocallyNameless.Ops,
     Unbound.PermM,
     Unbound.Util,
     Unbound.DynR,
-    Unbound.Nominal2.Name,
-    Unbound.Nominal2.Fresh,
-    Unbound.Nominal2.Types,
-    Unbound.Nominal2.Alpha,
-    Unbound.Nominal2.Subst,
-    Unbound.Nominal2.Ops
+    Unbound.Nominal.Name,
+    Unbound.Nominal.Fresh,
+    Unbound.Nominal.Types,
+    Unbound.Nominal.Alpha,
+    Unbound.Nominal.Subst,
+    Unbound.Nominal.Ops
 
   other-extensions: CPP
                     EmptyDataDecls

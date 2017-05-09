@@ -8,13 +8,13 @@
            , UndecidableInstances
   #-}
 
-module Unbound.Nominal2.Alpha where
+module Unbound.Nominal.Alpha where
 
 import Generics.RepLib hiding (GT)
 import Unbound.PermM
-import Unbound.Nominal2.Name
-import Unbound.Nominal2.Types
-import Unbound.Nominal2.Fresh
+import Unbound.Nominal.Name
+import Unbound.Nominal.Types
+import Unbound.Nominal.Fresh
 import Unbound.Util
 
 import Data.Set (Set)

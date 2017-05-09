@@ -6,7 +6,7 @@
            , UndecidableInstances
   #-}
 
-module Unbound.Nominal2.Fresh (
+module Unbound.Nominal.Fresh (
   Fresh(..)
 
   , FreshM
@@ -17,7 +17,7 @@ module Unbound.Nominal2.Fresh (
 ) where
 
 import Generics.RepLib
-import Unbound.Nominal2.Name
+import Unbound.Nominal.Name
 
 import Control.Monad.Reader
 import qualified Control.Monad.State as St

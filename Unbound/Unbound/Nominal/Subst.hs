@@ -7,14 +7,14 @@
            , RankNTypes
   #-}
 
-module Unbound.Nominal2.Subst where
+module Unbound.Nominal.Subst where
 
 import Generics.RepLib
 
-import Unbound.Nominal2.Name
-import Unbound.Nominal2.Alpha
-import Unbound.Nominal2.Types
-import Unbound.Nominal2.Fresh
+import Unbound.Nominal.Name
+import Unbound.Nominal.Alpha
+import Unbound.Nominal.Types
+import Unbound.Nominal.Fresh
 
 ---------------------------------
 -- Public API
